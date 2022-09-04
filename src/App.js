@@ -17,7 +17,7 @@ function App() {
   const addToCart = (pro) => {
     if (
       cartProducts.includes(pro) ||
-      cartProducts.find((el) => el.id == pro.id)
+      cartProducts.find((el) => el.id === pro.id)
     ) {
       let notify = () => toast.error("Already exists!", { autoClose: 2000 });
       notify();
@@ -52,7 +52,7 @@ function App() {
       return results;
     };
     return getProducts;
-  },[loading]);
+  },[]);
   return (
     <BrowserRouter basename={process.env.PUBLIC_UR}>
       <Routes>
