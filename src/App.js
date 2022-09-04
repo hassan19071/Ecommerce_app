@@ -48,9 +48,8 @@ function App() {
       )
         .then((json) => json.json())
         .then((data) => setData([data]));
-      setLoading(true);
-      return results;
     };
+    setLoading(true);
     return getProducts;
   },[]);
   return (
