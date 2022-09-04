@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./style/products.scss";
 
-const Products = ({ data, loading, addToCart }) => {
+const Products = ({ addToCart }) => {
+
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState([]);
+  
+  useEffect(() => {
+    setLoading(false);
+    let getProducts = async () => {
+      let results = await fetch(
+        "https://api.escuelajs.co/api/v1/products?offset=0&limit=16"
+      )
+        .then((json) => json.json())
+        .then((data) => setData(data));
+      setLoading(true);
+      return results;
+    };
+   
+    return getProducts;
+  },[])
+
   return (
     <div className="products" id="product">
       <div className="container">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import ProductInfo from "./pages/Product_info";
@@ -10,8 +10,6 @@ import Category from "./pages/Category";
 import ShopPage from "./pages/Shop";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
   let [cartProducts, setCartProducts] = useState([]);
 
   const addToCart = (pro) => {
@@ -40,18 +38,6 @@ function App() {
     return setCartProducts([]);
   };
 
-  useEffect(() => {
-    setLoading(false);
-    let getProducts = async () => {
-      let results = await fetch(
-        "https://api.escuelajs.co/api/v1/products?offset=0&limit=16"
-      )
-        .then((json) => json.json())
-        .then((data) => setData([data]));
-    };
-    setLoading(true);
-    return getProducts;
-  },[]);
   return (
     <BrowserRouter basename={process.env.PUBLIC_UR}>
       <Routes>
@@ -59,8 +45,6 @@ function App() {
           path={`/ecommerce_app`}
           element={
             <Home
-              loading={loading}
-              data={data}
               cartProducts={cartProducts}
               addToCart={addToCart}
             />

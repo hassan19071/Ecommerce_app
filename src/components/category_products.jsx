@@ -12,7 +12,7 @@ const CategoryProducts = ({ category, addToCart, data, loading }) => {
     });
     filPro.length = 20;
     return setProCat(filPro);
-  });
+  },[category]);
   return (
     <div className="products">
       <div className="container">

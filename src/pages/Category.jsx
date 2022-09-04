@@ -22,7 +22,7 @@ const Category = ({ cartProducts, addToCart }) => {
       return results;
     };
     return getProducts;
-  }, [category]);
+  }, []);
   return (
     <>
       <Navbar cartProducts={cartProducts} />
