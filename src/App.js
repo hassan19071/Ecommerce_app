@@ -10,7 +10,7 @@ import Category from "./pages/Category";
 import ShopPage from "./pages/Shop";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   let [cartProducts, setCartProducts] = useState([]);
 
@@ -47,12 +47,12 @@ function App() {
         "https://api.escuelajs.co/api/v1/products?offset=0&limit=16"
       )
         .then((json) => json.json())
-        .then((data) => setData(data));
+        .then((data) => setData([data]));
       setLoading(true);
       return results;
     };
     return getProducts;
-  });
+  },[]);
   return (
     <BrowserRouter basename={process.env.PUBLIC_UR}>
       <Routes>
