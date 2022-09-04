@@ -31,7 +31,7 @@ function App() {
 
   let deleteProduct = (pro) => {
     let filPros = cartProducts.filter((prod) => {
-      return prod != pro;
+      return prod !== pro;
     });
     return setCartProducts(filPros);
   };

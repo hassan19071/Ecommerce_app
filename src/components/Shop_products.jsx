@@ -96,7 +96,7 @@ const ShopProducts = ({ addToCart, data, loading }) => {
           </div>
         </div>
         <div className="row my-5">
-          {loading ? (
+          {loading? (
             pros.map((product) => {
               return (
                 <div className="col-lg-3 col-md-6 mt-4" key={product.id}>
@@ -266,6 +266,7 @@ const ShopProducts = ({ addToCart, data, loading }) => {
             </>
           )}
         </div>
+        {pros.length == 0? (<h4 className="no-pros">no products</h4>):false}
       </div>
     </div>
   );
