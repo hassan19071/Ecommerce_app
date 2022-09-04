@@ -57,7 +57,7 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_UR}>
       <Routes>
         <Route
-          path={`/${process.env.PUBLIC_UR}`}
+          path={`/ecommerce_app`}
           element={
             <Home
               loading={loading}
