@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ecommerce_app/static/css/main.0b0a1c9e.css",
+    "main.js": "/ecommerce_app/static/js/main.6fa1b05c.js",
+    "static/media/fa-solid-900.ttf": "/ecommerce_app/static/media/fa-solid-900.422cfe2813b03d900c10.ttf",
+    "static/media/fa-brands-400.ttf": "/ecommerce_app/static/media/fa-brands-400.aff1938a5c48584fa92b.ttf",
+    "static/media/fa-solid-900.woff2": "/ecommerce_app/static/media/fa-solid-900.64d495f582d4a1590a6c.woff2",
+    "static/media/fa-brands-400.woff2": "/ecommerce_app/static/media/fa-brands-400.a914b121110f8b6e01c9.woff2",
+    "static/media/fa-regular-400.ttf": "/ecommerce_app/static/media/fa-regular-400.625dca125b58060788da.ttf",
+    "static/media/clothes.jpg": "/ecommerce_app/static/media/clothes.bd914594279c9121bd79.jpg",
+    "static/media/fa-regular-400.woff2": "/ecommerce_app/static/media/fa-regular-400.47074dec01b64a5db2c4.woff2",
+    "static/media/fa-v4compatibility.ttf": "/ecommerce_app/static/media/fa-v4compatibility.ea8535110e0c42fd0046.ttf",
+    "static/media/fa-v4compatibility.woff2": "/ecommerce_app/static/media/fa-v4compatibility.2ec4574b00d1d21ed0a3.woff2",
+    "static/media/visa.svg": "/ecommerce_app/static/media/visa.b054b87cdc19899fb027f069c80c61ed.svg",
+    "static/media/paypal.svg": "/ecommerce_app/static/media/paypal.46d1ced387f7056192604b6e8ca4b452.svg",
+    "index.html": "/ecommerce_app/index.html",
+    "main.0b0a1c9e.css.map": "/ecommerce_app/static/css/main.0b0a1c9e.css.map",
+    "main.6fa1b05c.js.map": "/ecommerce_app/static/js/main.6fa1b05c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b0a1c9e.css",
+    "static/js/main.6fa1b05c.js"
+  ]
+}
