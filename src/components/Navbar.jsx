@@ -10,7 +10,7 @@ const Navbar = ({ cartProducts }) => {
         <div className="nav d-flex align-items-center justify-content-between">
           <div className="logo">
             <h1>
-              <Link to="/ecommerce_app">Shop.</Link>
+              <Link to="/">Shop.</Link>
             </h1>
           </div>
           <div
@@ -20,7 +20,7 @@ const Navbar = ({ cartProducts }) => {
           >
             <ul className="list-unstyled d-lg-flex mb-0">
               <li>
-                <Link to="/ecommerce_app">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/category/Clothes">Clothes</Link>

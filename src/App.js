@@ -54,10 +54,10 @@ function App() {
     return getProducts;
   },[]);
   return (
-    <BrowserRouter basename={process.env.PUBLIC_UR}>
+    <BrowserRouter>
       <Routes>
         <Route
-          path={`/ecommerce_app`}
+          path="/"
           element={
             <Home
               loading={loading}

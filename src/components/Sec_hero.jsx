@@ -11,7 +11,7 @@ const SecHero = ({ category }) => {
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">
-              <Link to="/ecommerce_app">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li className="breadcrumb-item active" aria-current="page">
               {category}
