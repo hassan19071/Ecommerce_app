@@ -1,0 +1,31 @@
+.hero-section {
+  padding: 100px 0;
+  background-color: rgba(221, 221, 221, 0.766);
+  .hero-text {
+    h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-size: calc(2rem + 2vw);
+      span {
+        color: #117a58 !important;
+      }
+    }
+    p {
+      margin: 20px 0 30px;
+    }
+    a {
+      padding: 10px 30px;
+      border-radius: 10px 0 10px 0;
+      background-color: #117a58;
+      color: #fff;
+    }
+  }
+  .hero-img {
+    img {
+      width: 60%;
+    }
+  }
+}

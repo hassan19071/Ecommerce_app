@@ -1,0 +1,126 @@
+.cart-products {
+  margin: 100px 0;
+  .head {
+    h2 {
+      text-transform: uppercase;
+      width: fit-content;
+      background-color: #fff;
+      margin: auto;
+      position: relative;
+      padding: 0 10px;
+      font-size: 25px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 150%;
+        height: 2px;
+        background-color: #117a58;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 2px;
+        background-color: #117a58;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+  }
+  .pro {
+    border-bottom: 3px solid #eee;
+    padding-bottom: 40px;
+  }
+  .cart {
+    .price {
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0 !important;
+      }
+    }
+    .qty {
+      button {
+        font-size: 13px;
+        color: #fff;
+        background-color: #117a58;
+        border: none;
+      }
+      span {
+        width: 60px;
+        text-align: center;
+      }
+    }
+    .total {
+      h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 0 !important;
+      }
+    }
+    .del {
+      button {
+        background-color: #a51a1a;
+        color: #fff;
+        border: none;
+        font-size: 15px;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .checkout {
+    .total-price {
+      flex-wrap: wrap;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+    }
+    a {
+      padding: 8px 30px;
+      background-color: #117a58;
+      color: #fff;
+      margin-top: 10px;
+    }
+  }
+  .no {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  .back {
+    padding: 10px 0px;
+    background: transparent;
+    border: 2px solid #117a58;
+    color: #117a58;
+    transition: 0.3s;
+    width: 150px;
+    text-align: center;
+    display: block;
+    margin: 10px auto 20px !important;
+    &:hover {
+      background-color: #117a58;
+      color: #fff;
+    }
+  }
+  .remove-all {
+    padding: 8px 30px;
+    background-color: rgb(95, 8, 8);
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}

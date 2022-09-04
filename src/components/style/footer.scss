@@ -1,0 +1,54 @@
+.footer {
+  padding: 50px 0 0;
+  background-color: rgba(0, 0, 0, 0.914);
+  .text {
+    h5 {
+      color: #fff !important;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    a,
+    p {
+      color: rgb(212, 211, 211);
+    }
+  }
+  .form {
+    h5 {
+      color: #fff !important;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    form {
+      input {
+        width: 100%;
+        padding: 15px 20px;
+        border: none;
+        outline: none;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #117a58;
+        color: #fff;
+        border: none;
+        margin-top: 10px;
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    p {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+  .foot {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 40px;
+    p {
+      color: rgb(217, 214, 214);
+    }
+  }
+}

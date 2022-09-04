@@ -1,0 +1,74 @@
+.navbar-nav {
+  padding: 10px 0;
+  background-color: #ddd;
+  .container {
+    position: relative;
+  }
+  h1 {
+    font-size: calc(1.5rem + 1.3vw);
+    a {
+      color: #117a58;
+      &:hover {
+        color: #117a58;
+      }
+    }
+  }
+  .links {
+    @media (max-width: 991px) {
+      position: absolute;
+      bottom: 0;
+      transform: translateY(calc(100% + 10px));
+      padding: 20px;
+      background-color: #117a58;
+      width: 100%;
+      z-index: 100;
+      left: 0;
+      transition: height 0.4s;
+      opacity: 1;
+      visibility: visible;
+      &.hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+      li {
+        margin: 20px 0 !important;
+        a {
+          color: #fff !important;
+        }
+      }
+    }
+    li {
+      margin: 0 10px;
+      a {
+        color: rgb(75, 75, 75);
+      }
+    }
+  }
+  .cart {
+    a {
+      span {
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #117a58;
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        line-height: 20px;
+      }
+      i {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.895);
+      }
+    }
+    .menu {
+      i {
+        font-size: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+}
