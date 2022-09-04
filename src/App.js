@@ -54,10 +54,10 @@ function App() {
     return getProducts;
   },[]);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_UR}>
       <Routes>
         <Route
-          path="/"
+          path={`/${process.env.PUBLIC_UR}`}
           element={
             <Home
               loading={loading}

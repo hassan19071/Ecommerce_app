@@ -10,7 +10,7 @@ const Navbar = ({ cartProducts }) => {
         <div className="nav d-flex align-items-center justify-content-between">
           <div className="logo">
             <h1>
-              <Link to="/">Shop.</Link>
+              <Link to={`/${process.env.PUBLIC_UR}`}>Shop.</Link>
             </h1>
           </div>
           <div
@@ -20,7 +20,7 @@ const Navbar = ({ cartProducts }) => {
           >
             <ul className="list-unstyled d-lg-flex mb-0">
               <li>
-                <Link to="/">Home</Link>
+                <Link to={`/${process.env.PUBLIC_UR}`}>Home</Link>
               </li>
               <li>
                 <Link to="/category/Clothes">Clothes</Link>
