@@ -54,7 +54,7 @@ function App() {
     return getProducts;
   }, []);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_UR}>
       <Routes>
         <Route
           path="/"
