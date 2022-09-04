@@ -52,7 +52,7 @@ function App() {
       return results;
     };
     return getProducts;
-  },[]);
+  });
   return (
     <BrowserRouter basename={process.env.PUBLIC_UR}>
       <Routes>
