@@ -266,7 +266,7 @@ const ShopProducts = ({ addToCart, data, loading }) => {
             </>
           )}
         </div>
-        {pros.length == 0? (<h4 className="no-pros">no products</h4>):false}
+        {pros.length == 0 && loading? (<h4 className="no-pros">no products</h4>):false}
       </div>
     </div>
   );
