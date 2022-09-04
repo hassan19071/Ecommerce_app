@@ -2,7 +2,7 @@
   "homepage": "https://hassan19071.github.io/ecommerce_app",
   "name": "ecommerce_app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.2",
     "@testing-library/jest-dom": "^5.16.5",
