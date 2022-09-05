@@ -23,21 +23,21 @@ const Navbar = ({ cartProducts }) => {
                 <Link to={`/ecommerce_app`}>Home</Link>
               </li>
               <li>
-                <Link to="/category/Clothes">Clothes</Link>
+                <Link to="/ecommerce_app/category/Clothes">Clothes</Link>
               </li>
               <li>
-                <Link to="/category/Electronics">Electronics</Link>
+                <Link to="/ecommerce_app/category/Electronics">Electronics</Link>
               </li>
               <li>
-                <Link to="/category/Furniture">Furniture</Link>
+                <Link to="/ecommerce_app/category/Furniture">Furniture</Link>
               </li>
               <li>
-                <Link to="/category/Shoes">Shoes</Link>
+                <Link to="/ecommerce_app/category/Shoes">Shoes</Link>
               </li>
             </ul>
           </div>
           <div className="cart d-flex align-items-center">
-            <Link to="/cart" className="position-relative">
+            <Link to="/ecommerce_app/cart" className="position-relative">
               <i className="fa-solid fa-cart-shopping"></i>
               <span className="position-absolute">{cartProducts.length}</span>
             </Link>

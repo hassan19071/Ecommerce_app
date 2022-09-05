@@ -51,13 +51,13 @@ function App() {
           }
         />
         <Route
-          path="product/:id"
+          path="/ecommerce_app/product/:id"
           element={
             <ProductInfo cartProducts={cartProducts} addToCart={addToCart} />
           }
         />
         <Route
-          path="/cart"
+          path="/ecommerce_app/cart"
           element={
             <CartShopping
               cartProducts={cartProducts}
@@ -67,17 +67,17 @@ function App() {
           }
         />
         <Route
-          path="/checkout"
+          path="/ecommerce_app/checkout"
           element={<Checkout cartProducts={cartProducts} />}
         />
         <Route
-          path="/category/:name"
+          path="/ecommerce_app/category/:name"
           element={
             <Category cartProducts={cartProducts} addToCart={addToCart} />
           }
         />
         <Route
-          path="/shop"
+          path="/ecommerce_app/shop"
           element={
             <ShopPage cartProducts={cartProducts} addToCart={addToCart} />
           }

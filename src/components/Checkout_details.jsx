@@ -18,7 +18,7 @@ const Checkout_details = ({ cartProducts }) => {
         {sucess ? (
           <div className="msg">
             <h1>Purchased successfully</h1>
-            <Link to="/shop">Back to shop</Link>
+            <Link to="/ecommerce_app/shop">Back to shop</Link>
           </div>
         ) : (
           <div className="row">
@@ -201,7 +201,7 @@ const Checkout_details = ({ cartProducts }) => {
                       </div>
                       <div>
                         <p>
-                          Total: <span>{pro.price}</span>
+                          Total: <span>${pro.price}</span>
                         </p>
                       </div>
                     </div>

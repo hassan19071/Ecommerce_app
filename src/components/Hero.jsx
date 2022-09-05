@@ -16,7 +16,7 @@ const HeroSection = () => {
                 <br /> Arrivals
               </h1>
               <p>Save more with coupons & up to 60% off!</p>
-              <Link to="/shop">Shop Now</Link>
+              <Link to="/ecommerce_app/shop">Shop Now</Link>
             </div>
           </div>
           <div className="col-lg-6 order-lg-2 order-1 text-center mb-lg-0 mb-4">

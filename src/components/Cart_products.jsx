@@ -32,7 +32,7 @@ const CartProducts = ({
             cartProducts.map((pro) => {
               return (
                 <div
-                  className="row align-items-center mt-5 text-center pro"
+                  className="row align-items-center mt-5 text-lg-center pro"
                   key={pro.id}
                 >
                   <div className="col-md-3">
@@ -51,7 +51,7 @@ const CartProducts = ({
                     </div>
                   </div>
                   <div className="col-md-2 mt-md-0 mt-3">
-                    <div className="qty d-flex align-items-center justify-content-center">
+                    <div className="qty d-flex align-items-center justify-content-lg-center">
                       <button>
                         <i className="fa-solid fa-minus"></i>
                       </button>
@@ -67,7 +67,7 @@ const CartProducts = ({
                     </div>
                   </div>
                   <div className="col-md-1 mt-md-0 mt-3">
-                    <div className="del">
+                    <div className="del text-end">
                       <button onClick={() => deleteProduct(pro)}>
                         <i className="fa-solid fa-trash-can"></i>
                       </button>
@@ -79,7 +79,7 @@ const CartProducts = ({
           ) : (
             <>
               <h4 className="no">No products</h4>
-              <Link className="back" to={"/shop"}>
+              <Link className="back" to={"/ecommerce_app/shop"}>
                 Back to shop
               </Link>
             </>
@@ -89,7 +89,7 @@ const CartProducts = ({
               <div className="total-price d-flex align-items-center justify-content-between">
                 <h3>Total Price: ${cartProducts.length > 0 ? total : 0}</h3>
                 <div className="d-flex flex-wrap ">
-                  <Link to="/checkout">Checkout</Link>
+                  <Link to="/ecommerce_app/checkout">Checkout</Link>
                   <button
                     className="remove-all"
                     onClick={removeAllCartProducts}
