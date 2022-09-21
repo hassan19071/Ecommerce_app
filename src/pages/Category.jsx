@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 import SecHero from "../components/Sec_hero";
 import { useParams } from "react-router-dom";
 import CategoryProducts from "../components/category_products";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Category = ({ cartProducts, addToCart }) => {

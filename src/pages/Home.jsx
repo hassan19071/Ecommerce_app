@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import HeroSection from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Products from "../components/Products";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Home = ({cartProducts, addToCart}) => {
