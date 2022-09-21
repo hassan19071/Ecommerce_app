@@ -39,7 +39,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_UR}>
+    <BrowserRouter>
       <Routes>
         <Route
           path={`/ecommerce_app`}
