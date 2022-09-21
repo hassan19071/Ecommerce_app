@@ -22,7 +22,7 @@ const ProductDetails = ({ addToCart }) => {
       return results;
     };
 
-    return getProducts;
+     getProducts();
   }, []);
 
   return (

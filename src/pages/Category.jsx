@@ -21,7 +21,7 @@ const Category = ({ cartProducts, addToCart }) => {
       setLoading(true);
       return results;
     };
-    return getProducts;
+     getProducts();
   }, [category]);
   return (
     <>

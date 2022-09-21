@@ -20,7 +20,7 @@ const ShopPage = ({ cartProducts, addToCart }) => {
       setLoading(true);
       return results;
     };
-    return getAllPros;
+     getAllPros();
   }, []);
   return (
     <>

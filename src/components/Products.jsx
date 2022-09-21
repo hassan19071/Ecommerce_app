@@ -21,7 +21,7 @@ const Products = ({ addToCart }) => {
       return results;
     };
    
-    return getProducts;
+     getProducts();
   },[])
 
   return (
