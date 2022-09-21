@@ -10,7 +10,7 @@ const Navbar = ({ cartProducts }) => {
         <div className="nav d-flex align-items-center justify-content-between">
           <div className="logo">
             <h1>
-              <Link to={`/ecommerce_app`}>Shop.</Link>
+              <Link to={`/`}>Shop.</Link>
             </h1>
           </div>
           <div
@@ -20,24 +20,24 @@ const Navbar = ({ cartProducts }) => {
           >
             <ul className="list-unstyled d-lg-flex mb-0">
               <li>
-                <Link to={`/ecommerce_app`}>Home</Link>
+                <Link to={`/`}>Home</Link>
               </li>
               <li>
-                <Link to="/ecommerce_app/category/Clothes">Clothes</Link>
+                <Link to="/category/Clothes">Clothes</Link>
               </li>
               <li>
-                <Link to="/ecommerce_app/category/Electronics">Electronics</Link>
+                <Link to="/category/Electronics">Electronics</Link>
               </li>
               <li>
-                <Link to="/ecommerce_app/category/Furniture">Furniture</Link>
+                <Link to="/category/Furniture">Furniture</Link>
               </li>
               <li>
-                <Link to="/ecommerce_app/category/Shoes">Shoes</Link>
+                <Link to="/category/Shoes">Shoes</Link>
               </li>
             </ul>
           </div>
           <div className="cart d-flex align-items-center">
-            <Link to="/ecommerce_app/cart" className="position-relative">
+            <Link to="/cart" className="position-relative">
               <i className="fa-solid fa-cart-shopping"></i>
               <span className="position-absolute">{cartProducts.length}</span>
             </Link>

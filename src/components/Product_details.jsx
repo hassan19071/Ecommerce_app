@@ -87,7 +87,7 @@ const ProductDetails = ({ addToCart }) => {
                   <button onClick={() => addToCart(product)}>
                     Add to cart
                   </button>
-                  <Link to={"/ecommerce_app/shop"} className="back-shop">
+                  <Link to={"/shop"} className="back-shop">
                     Back to shop
                   </Link>
                 </div>

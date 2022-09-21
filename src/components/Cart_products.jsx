@@ -79,7 +79,7 @@ const CartProducts = ({
           ) : (
             <>
               <h4 className="no">No products</h4>
-              <Link className="back" to={"/ecommerce_app/shop"}>
+              <Link className="back" to={"/shop"}>
                 Back to shop
               </Link>
             </>
@@ -89,7 +89,7 @@ const CartProducts = ({
               <div className="total-price d-flex align-items-center justify-content-between">
                 <h3>Total Price: ${cartProducts.length > 0 ? total : 0}</h3>
                 <div className="d-flex flex-wrap ">
-                  <Link to="/ecommerce_app/checkout">Checkout</Link>
+                  <Link to="/checkout">Checkout</Link>
                   <button
                     className="remove-all"
                     onClick={removeAllCartProducts}

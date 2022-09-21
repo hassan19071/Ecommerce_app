@@ -121,7 +121,7 @@ const ShopProducts = ({ addToCart, data, loading }) => {
                       </div>
                     </div>
                     <div className="add position-absolute d-flex align-items-center justify-content-center">
-                      <Link to={`/ecommerce_app/product/${product.id}`}>
+                      <Link to={`/product/${product.id}`}>
                         <i className="fa-solid fa-info"></i>
                       </Link>
                       <button onClick={() => addToCart(product)}>

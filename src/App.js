@@ -42,7 +42,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path={`/ecommerce_app`}
+          path={`/`}
           element={
             <Home
               cartProducts={cartProducts}
@@ -51,13 +51,13 @@ function App() {
           }
         />
         <Route
-          path="/ecommerce_app/product/:id"
+          path="/product/:id"
           element={
             <ProductInfo cartProducts={cartProducts} addToCart={addToCart} />
           }
         />
         <Route
-          path="/ecommerce_app/cart"
+          path="/cart"
           element={
             <CartShopping
               cartProducts={cartProducts}
@@ -67,17 +67,17 @@ function App() {
           }
         />
         <Route
-          path="/ecommerce_app/checkout"
+          path="/checkout"
           element={<Checkout cartProducts={cartProducts} />}
         />
         <Route
-          path="/ecommerce_app/category/:name"
+          path="/category/:name"
           element={
             <Category cartProducts={cartProducts} addToCart={addToCart} />
           }
         />
         <Route
-          path="/ecommerce_app/shop"
+          path="/shop"
           element={
             <ShopPage cartProducts={cartProducts} addToCart={addToCart} />
           }
